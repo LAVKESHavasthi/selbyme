@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to SELBYME, your one-stop destination for fast and reliable shopping.">
+    <title>SELBYME - Shop Smarter, Faster!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header --><header class="header">
+    <div class="logo">
+        <img src="logu.png" alt="SELBYME Logo">
+        <h1 class="brand-name">SELBYME</h1>
+    </div>
+    <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="hamburger-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">All Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+    
+
+    <!-- Subheader --><!-- Subheader -->
+<div class="subheader">
+    <input type="text" id="search-box" placeholder="Search products..." oninput="showSuggestions()" autocomplete="off">
+    <button onclick="searchProducts()">Search</button>
+    <div id="suggestions" class="suggestions-box"></div>
+</div>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Shop Smarter, Faster!</h2>
+            <p>Delivering your products within 199 minutes,anywhere in India.</p>
+            <a href="allproducts.html" class="btn-primary">VIEW OUR PRODUCTS</a>
+        </div>
+        <div class="watermark">selbyme </div>
+    </section>
+    <hr></hr>
+
+    <!-- Horizontal Banners -->
+    <section class="banners">
+        <div class="banner-slider">
+            <div><img src="banner1.jpg" alt="Banner 1"></div>
+            <div><img src="1.jpg" alt="Banner 2"></div>
+            <div><img src="1.jpg" alt="Banner 3"></div>
+            <div><img src="1.jpg" alt="Banner 4"></div>
+            <div><img src="3.jpg" alt="Banner 5"></div>
+        </div>
+    </section>
+    <hr></hr>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Explore Categories</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="shopCategory('electronics')">
+                <img src="electronics.jpg" alt="Electronics">
+                <a href="allproducts.html" class="btn-primary"style="color: red;">Electronics</a>
+            </div>
+            <div class="category-card" onclick="shopCategory('fashion')">
+                <img src="fashion.jpg" alt="Fashion">
+                
+                <a href="allproducts.html" class="btn-primary"style="color: red;">Fashion</a>
+            </div>
+            <div class="category-card" onclick="shopCategory('groceries')">
+                <img src="groceries.jpg" alt="Groceries">
+                <a href="allproducts.html" class="btn-primary"style="color: red;">Groceries</a>
+            </div>
+            <div class="category-card" onclick="shopCategory('furniture')">
+                <img src="furniture.jpg" alt="Furniture">
+                <a href="allproducts.html" class="btn-primary"style="color: red;">Furniture</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Trending Products -->
+    <section class="trending">
+        <h2>Trending Products</h2>
+        <div class="product-grid" id="trending-products">
+            <!-- Dynamic Products Will Load Here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><strong>&copy; 2024</strong> SELBYME. All rights reserved.</p>
+        <p><a href="terms.html">Terms</a> | <a href="privacy policy.html">Privacy Policy</a> |<a href="contact.html"> Contact </a></p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

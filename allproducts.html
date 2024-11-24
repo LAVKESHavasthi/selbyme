@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | SELBYME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <img src="logu.png" alt="SELBYME Logo">
+        <h1 class="brand-name">SELBYME</h1>
+    </div>
+    <nav>
+            <a href="index.html"style="color: white;">Home</a>
+        </nav>
+    </header>
+    <div class="subheader">
+    <input type="text" id="search-box" placeholder="Search products..." oninput="showSuggestions()" autocomplete="off">
+    <button onclick="searchProducts()">Search</button>
+    <div id="suggestions" class="suggestions-box"></div>
+</div>
+
+    <!-- Filter by Category -->
+    <section class="filter">
+        <label for="category-select"><strong>Choose Category</strong>:</label>
+        <select id="category-select">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="groceries">Groceries</option>
+            <option value="furniture">Furniture</option>
+        </select>
+    </section>
+
+    <!-- All Products -->
+    <section class="product-grid" id="all-products">
+        <!-- Dynamic Products Will Be Loaded Here -->
+    </section>
+
+    <footer class="footer">
+        <p><strong>&copy; 2024</strong> SELBYME. All rights reserved.</p>
+        <p><a href="terms.html">Terms</a> | <a href="privacy policy.html">Privacy Policy</a> |<a href="contact.html"> Contact </a></p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
